@@ -1,0 +1,9 @@
+.today {
+  border-radius: 50% !important;
+  background-color: #45a524 !important;
+  color: #fff !important;
+
+  &::after {
+    width: 0 !important;
+  }
+}

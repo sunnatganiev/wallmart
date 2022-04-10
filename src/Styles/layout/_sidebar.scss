@@ -1,0 +1,11 @@
+.sidebar {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  & > * {
+    background-color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

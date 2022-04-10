@@ -1,0 +1,27 @@
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1.6rem;
+  opacity: 0.5;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-right: 3rem;
+  }
+}

@@ -1,0 +1,17 @@
+.navigation {
+  list-style: none;
+  margin-top: 5rem;
+
+  &__footer {
+    margin-top: 6rem;
+
+    & > * {
+      &:not(:last-child) {
+        border-top: 1px solid rgba(0, 0, 0, 0.171);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+        padding: 2rem 0;
+      }
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.offer {
+  padding: 2rem;
+  color: #eee;
+  width: 30rem;
+  position: relative;
+
+  &__heading {
+    font-size: 3rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  &__promo {
+    background-color: rgba(255, 255, 255, 0.719);
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    font-weight: 700;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

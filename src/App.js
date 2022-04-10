@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Delivery from "./components/Delivery";
+import Content from "./layout/Content";
+import Header from "./layout/Header";
+import Sidebar from "./layout/Sidebar";
 
 function App() {
+
+  const [showDelivery, setShowDelivery] = useState(false)
+
+  const handleShowDelivery = (condition) => {
+    setShowDelivery(condition)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header delivery={handleShowDelivery} />
+      <Sidebar />
+      <Content />
+      {showDelivery && <Delivery delivery={handleShowDelivery} show={showDelivery} />}
     </div>
   );
 }
